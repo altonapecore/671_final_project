@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de8bcda2e2e1a3541acf064ede1115dc, type: 3}
+  m_Name: Rhythm01
+  m_EditorClassIdentifier: 
+  quickTimeType: 1
+  DELAY_BEFORE_QT_FAIL: 10
+  quickTimePossibleKeys: 310032003300
+  MIN_TOTAL_INPUTS: 3
+  MAX_TOTAL_INPUTS: 4
+  INPUT_KEY_DELAY: 2
+  MAX_DELAY_BEFORE_FAIL: 0.5
+  MIN_POSSIBLE_NEEDED_KEYHITS: 0
+  MAX_POSSIBLE_NEEDED_KEYHITS: 0
+  isKeyCombo: 1
+  isRhythm: 1
+  isMash: 0
