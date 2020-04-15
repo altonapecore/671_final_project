@@ -112,6 +112,9 @@ public class PlayerAnimationControl : MonoBehaviour
                 // Lock the player in place
                 LockPlayer(true, true, true, 0, 0.85f);
                 //GameVars.instance.audioManager.PlaySFX(playerAttack, 0.2f, gameObject.transform.position);
+
+                // Play player swing sound
+                FMODUnity.RuntimeManager.PlayOneShot("Player Sounds/Player Swing");
             }
 
             //Trigger the animation.

@@ -70,6 +70,9 @@ public class AIWerewolfState_Attack : AIWerewolfState
 
                 if (_werewolfStateMachine.canDamagePlayer && _werewolfStateMachine.canDamageValue > 0.9f)
                 {
+                    // Play werewolf hit sound
+                    FMODUnity.RuntimeManager.PlayOneShot("Enemy Sounds/Enemy Swing and Hit");
+
                     _werewolfStateMachine.targetPlayer.TakeDamage(_werewolfStateMachine.damage);
                 }
        

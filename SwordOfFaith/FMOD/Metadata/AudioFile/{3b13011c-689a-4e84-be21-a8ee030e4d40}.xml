@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{3b13011c-689a-4e84-be21-a8ee030e4d40}">
+		<property name="assetPath">
+			<value>creatureYell.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.3831292517006803</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{576bc49d-e495-49ce-a076-cbfea4ac0acb}</destination>
+		</relationship>
+	</object>
+</objects>

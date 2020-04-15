@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 
 
+
+
 public enum CharacterState
 {
     Idle = 0,
@@ -41,10 +43,10 @@ public class PlayerControl : SuperStateMachine
     public CharacterItem currentItem;
     public GameObject swordItem;
 
-    [Header("Sounds")]
-    [Space(10)]
-    public AudioClip playerTakeDamage;
-    public AudioClip playerDie;
+    //[Header("Sounds")]
+    //[Space(10)]
+    //public AudioClip playerTakeDamage;
+    //public AudioClip playerDie;
 
     [Header("Settings")]
     [Space(10)]
@@ -70,6 +72,16 @@ public class PlayerControl : SuperStateMachine
     private Animator anim;
     private Rigidbody rb;
     private bool damaged = false;
+
+    // Audio variables
+    [FMODUnity.EventRef]
+    public string SwordSwitch;
+
+    [FMODUnity.EventRef]
+    public string playerHurt;
+
+    [FMODUnity.EventRef]
+    public string playerDie;
 
 
     // Public Properties
@@ -170,6 +182,8 @@ public class PlayerControl : SuperStateMachine
     */
     public void ToggleSword(bool toggle, CharacterItem newItem = CharacterItem.None)
     {
+        // Play sword change sound
+        FMODUnity.RuntimeManager.PlayOneShot(SwordSwitch, transform.position);
         if (toggle)
         {
             // Check current item
@@ -421,6 +435,9 @@ public class PlayerControl : SuperStateMachine
         // First off make sure we are alive
         if (isAlive && !damaged && canMove)
         {
+            // Play damaged player sound
+            FMODUnity.RuntimeManager.PlayOneShot(playerHurt, transform.position);
+
             // Decrement health
             HealthMeter.Health -= amount;
             damaged = true;
@@ -428,6 +445,9 @@ public class PlayerControl : SuperStateMachine
             // Check if we're below zero
             if (HealthMeter.Health < 0.0f)
             {
+                // Play dead player sound
+                FMODUnity.RuntimeManager.PlayOneShot(playerDie, transform.position);
+
                 // Clamp the health at zero
                 HealthMeter.Health = 0.0f;
                 // Kill the player

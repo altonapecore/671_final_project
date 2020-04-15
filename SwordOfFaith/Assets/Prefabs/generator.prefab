@@ -151,6 +151,7 @@ MonoBehaviour:
   hasPlayerHitNeededKey: 0
   objectiveInfo: {fileID: 0}
   currentPlayerUI: {fileID: 0}
+  playerSide: {fileID: 0}
 --- !u!114 &3677109996296080674
 MonoBehaviour:
   m_ObjectHideFlags: 0
