@@ -22,6 +22,9 @@ public class PlayerAnimationControl : MonoBehaviour
     [Space(10)]
     public AudioClip playerAttack;
 
+    [FMODUnity.EventRef]
+    public string playerSwing;
+
     private void Awake()
     {
         // Cache required components
@@ -114,7 +117,7 @@ public class PlayerAnimationControl : MonoBehaviour
                 //GameVars.instance.audioManager.PlaySFX(playerAttack, 0.2f, gameObject.transform.position);
 
                 // Play player swing sound
-                FMODUnity.RuntimeManager.PlayOneShot("Player Sounds/Player Swing");
+                FMODUnity.RuntimeManager.PlayOneShot(playerSwing, transform.position);
             }
 
             //Trigger the animation.

@@ -18,6 +18,20 @@ public class QTHandler : MonoBehaviour
     public bool pressRhythmKeyNow; //Enables when it's time to hit the specified key
     public int currentIndexReached; //The index in the array the player has reached
 
+    [FMODUnity.EventRef]
+    public string generatorStateEvent = "";
+
+    FMOD.Studio.EventInstance generatorState;
+
+    [FMODUnity.EventRef]
+    public string qTSuccess = "";
+
+    [FMODUnity.EventRef]
+    public string qTFail = "";
+
+    [FMODUnity.EventRef]
+    public string genFinished = "";
+
     #region Stored Values
     [HideInInspector]
     public bool hasPlayerHitNeededKey; 
@@ -49,6 +63,8 @@ public class QTHandler : MonoBehaviour
     /// </summary>
     void Start()
     {
+        generatorState.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+
         if(quickTimeEvents == null || quickTimeEvents.Count == 0)
         {
             Debug.LogError("ERROR - QTManager on " + gameObject.name + " has no QTEvent");
@@ -121,6 +137,10 @@ public class QTHandler : MonoBehaviour
     /// </summary>
     public void BeginQTEvent()
     {
+        // Play generator audio
+        generatorState = FMODUnity.RuntimeManager.CreateInstance(generatorStateEvent);
+        generatorState.start();
+
         //GameVars.instance.audioManager.PlaySFX(ObjectiveManager.instance.generatorInteract, 0.5f, playerSide.transform.position);
         ResetQTEvent(true);
         PlayerSideStatusToggle(PlayerCamera.PlayerSideStatus.Paused);
@@ -153,6 +173,9 @@ public class QTHandler : MonoBehaviour
         {
             quickTimeStatus = QTStatus.Failed;
             currentPlayerUI.ChangeInstructions("Objective Failed\nTry Again");
+
+            FMODUnity.RuntimeManager.PlayOneShot(qTFail, transform.position);
+            generatorState.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
 
             //GameVars.instance.audioManager.PlaySFX(ObjectiveManager.instance.generatorFailed, 0.5f, playerSide.transform.position);
 
@@ -397,6 +420,8 @@ public class QTHandler : MonoBehaviour
     /// <returns></returns>
     private IEnumerator CompleteQTEvent()
     {
+        FMODUnity.RuntimeManager.PlayOneShot(qTSuccess, transform.position);
+
         currentPlayerUI.ChangeInstructions("COMPLETE");
         quickTimeStatus = QTStatus.Completed;
 
@@ -409,6 +434,10 @@ public class QTHandler : MonoBehaviour
 
         if (openList.Count == 0)
         {
+            
+            generatorState.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            FMODUnity.RuntimeManager.PlayOneShot(genFinished, transform.position);
+
             SetUpQuickTimeEvent(true);
             objectiveInfo.CompleteObjective();
         }

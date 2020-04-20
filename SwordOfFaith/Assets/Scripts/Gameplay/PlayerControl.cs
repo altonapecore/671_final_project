@@ -83,6 +83,11 @@ public class PlayerControl : SuperStateMachine
     [FMODUnity.EventRef]
     public string playerDie;
 
+    [FMODUnity.EventRef]
+    public string playerStateEvent = "";
+
+    FMOD.Studio.EventInstance playerState;
+
 
     // Public Properties
     public bool isAlive { get; set; }
@@ -135,6 +140,10 @@ public class PlayerControl : SuperStateMachine
         // Make it live!
         isAlive = true;
         */
+
+        playerState = FMODUnity.RuntimeManager.CreateInstance(playerStateEvent);
+
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(playerState, GetComponent<Transform>(), GetComponent<Rigidbody>());
     }
 
     private void Update()
