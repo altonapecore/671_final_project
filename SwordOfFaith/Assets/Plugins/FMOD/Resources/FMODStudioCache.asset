@@ -51,14 +51,14 @@ MonoBehaviour:
   Path: event:/Enemy Sounds/Enemy Swing and Hit
   guid: 68f805277e735249a1f79b99028d3953
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 532
+  Length: 723
 --- !u!114 &-6004220729021734493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,7 +92,7 @@ MonoBehaviour:
   Path: event:/Enemy Sounds/Enemy Hit
   guid: fecc556d5bc3894e9439933389cb018d
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -133,14 +133,14 @@ MonoBehaviour:
   Path: event:/Effects/Generator/Skill Check Fail
   guid: 1eb1f6a46707b44e94c87e929c941d0c
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1010
+  Length: 797
 --- !u!114 &-1878992675957424488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,7 +192,7 @@ MonoBehaviour:
   Path: event:/Ambience
   guid: 2eabad1666c3304cac72e66c4ceb334b
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -215,14 +215,14 @@ MonoBehaviour:
   Path: event:/Player Sounds/Player Switch Sword
   guid: a7fefe3780ddb0418daedf7832e58889
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1437
+  Length: 1146
 --- !u!114 &-528524046889405202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,14 +238,32 @@ MonoBehaviour:
   Path: event:/Enemy Sounds/Enemy Swing
   guid: 1bc60423e488a64c8b6e83ecab1ba0ef
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 532
+  Length: 483
+--- !u!114 &-171319476984984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637229796103092530
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,7 +278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 2596835168603242346}
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   EditorEvents:
   - {fileID: 5689699916476469161}
   - {fileID: 4155140088461636415}
@@ -280,10 +298,10 @@ MonoBehaviour:
   - {fileID: -864019027312279933}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   StringsBanks:
   - {fileID: 2596835168603242346}
-  stringsBankWriteTime: 637228986017720716
+  stringsBankWriteTime: 637229850331290923
   cacheVersion: 3
 --- !u!114 &167815276119276787
 MonoBehaviour:
@@ -300,14 +318,14 @@ MonoBehaviour:
   Path: event:/Effects/Generator/Skill Check Success
   guid: d2bc201019e22c42aee82cab3baba264
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2583
+  Length: 942
 --- !u!114 &1053732907582023235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,7 +341,7 @@ MonoBehaviour:
   Path: event:/Player Sounds/Player Die
   guid: a3eee90ad323104493c36f3b3a21b0de
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -331,6 +349,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 830
+--- !u!114 &2330013676124916647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637229796751602939
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &2596835168603242346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,7 +381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637228986017720716
+  lastModified: 637229850331290923
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -384,14 +420,14 @@ MonoBehaviour:
   Path: event:/Effects/Generator/Generator Progress
   guid: c5c26158d1f2de41b7477b322bbdfe66
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 7333
+  Length: 5999
 --- !u!114 &3220456460900951194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,14 +443,14 @@ MonoBehaviour:
   Path: event:/Player Sounds/Player Swing and Hit
   guid: 2600fdca9bf2b14380a25a0d879c2529
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1209
+  Length: 1024
 --- !u!114 &4155140088461636415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,14 +466,14 @@ MonoBehaviour:
   Path: event:/Effects/Final Doors
   guid: 0fc5ca5c853f23419488ed25bfd6bab9
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3000
+  Length: 1983
 --- !u!114 &4709948460140219347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,7 +491,7 @@ MonoBehaviour:
   lastModified: 637228986017660841
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &5604543018489121535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,14 +525,14 @@ MonoBehaviour:
   Path: event:/Effects/Generator/Generator Success
   guid: 0c22940a1559bd449eaf0670d4e16c05
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2500
+  Length: 2985
 --- !u!114 &7055357919911280559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,14 +548,32 @@ MonoBehaviour:
   Path: event:/Player Sounds/Player Swing
   guid: 77cd0b169926b64d874851c962d19dde
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2419
+  Length: 1000
+--- !u!114 &7127382412967910024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637229850331231081
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &7454720922521860349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,7 +607,7 @@ MonoBehaviour:
   Path: event:/Enemy Sounds/Enemy Die
   guid: c48de21bf63a884385b0cfd29f76cf36
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -576,14 +630,14 @@ MonoBehaviour:
   Path: event:/Player Sounds/Player Run
   guid: 482c5be84026c442aebf6c7aa82c0e45
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 400
+  Length: 152
 --- !u!114 &8887067902546674880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,11 +671,11 @@ MonoBehaviour:
   Path: event:/Player Sounds/Player Hit
   guid: 65b6bf84d66d6d4b979f7fd3eeaf4392
   Banks:
-  - {fileID: 4709948460140219347}
+  - {fileID: 7127382412967910024}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 740
+  Length: 383

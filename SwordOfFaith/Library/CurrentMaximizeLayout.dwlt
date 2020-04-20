@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 706, y: 471}
   m_MaxSize: {x: 18001, y: 14021}
   vertical: 0
-  controlID: 13043
+  controlID: 3566
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 431, y: 471}
   m_MaxSize: {x: 14001, y: 14021}
   vertical: 1
-  controlID: 13010
+  controlID: 3567
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_MinSize: {x: 401, y: 221}
   m_MaxSize: {x: 8001, y: 4021}
   vertical: 0
-  controlID: 13011
+  controlID: 3530
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,8 +183,8 @@ MonoBehaviour:
     y: 0
     width: 1691
     height: 932
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -561,7 +561,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 40fbffffc8400000dc4c0000b0530000c8540000
+      m_ExpandedIDs: 40fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -609,7 +609,7 @@ MonoBehaviour:
   m_MinSize: {x: 431, y: 250}
   m_MaxSize: {x: 14001, y: 10000}
   vertical: 0
-  controlID: 12973
+  controlID: 3568
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -728,20 +728,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Packages/RPG Character Animation Pack FREE/Prefabs
+    - Assets/Scripts/Gameplay
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Packages/RPG Character Animation Pack FREE/Prefabs
+  - Assets/Scripts/Gameplay
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\alexp\OneDrive\Desktop\New folder\671_final_project\SwordOfFaith
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 382}
-    m_SelectedIDs: 04780000
-    m_LastClickedID: 30724
-    m_ExpandedIDs: 000000006c7600006e76000070760000727600007476000076760000787600007a7600007c7600007e76000080760000827600008476000086760000887600008a7600008c7600008e76000090760000927600009476000096760000987600009a7600009c7600009e760000a0760000a2760000a4760000a6760000a8760000aa760000ac760000ae760000b076000094770000f4770000f677000000ca9a3b
+    scrollPos: {x: 0, y: 622}
+    m_SelectedIDs: 5c780000
+    m_LastClickedID: 30812
+    m_ExpandedIDs: 00000000727600007476000076760000787600007a7600007c7600007e76000080760000827600008476000086760000887600008a7600008c7600008e76000090760000927600009476000096760000987600009a7600009c7600009e760000a0760000a2760000a4760000a6760000a8760000aa760000ac760000ae760000b0760000b2760000b4760000b6760000b8760000ba760000bc76000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -769,7 +769,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006c7600006e76000070760000727600007476000076760000787600007a7600007c7600007e76000080760000827600008476000086760000887600008a7600008c7600008e76000090760000927600009476000096760000987600009a7600009c7600009e760000a0760000a2760000a4760000a6760000a8760000aa760000ac760000ae760000b076000094770000f4770000f677000000ca9a3b
+    m_ExpandedIDs: 00000000727600007476000076760000787600007a7600007c7600007e76000080760000827600008476000086760000887600008a7600008c7600008e76000090760000927600009476000096760000987600009a7600009c7600009e760000a0760000a2760000a4760000a6760000a8760000aa760000ac760000ae760000b0760000b2760000b4760000b6760000b8760000ba760000bc76000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -794,8 +794,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: bc630000
-    m_LastClickedInstanceID: 25532
+    m_SelectedInstanceIDs: d0460000
+    m_LastClickedInstanceID: 18128
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000d26e00006c3e0000464100001042000018360000a02b0200
     m_RenameOverlay:
@@ -887,5 +887,5 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 25532
+  m_LastInspectedObjectInstanceID: 18128
   m_LastVerticalScrollValue: 0

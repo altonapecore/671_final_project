@@ -84,9 +84,8 @@ public class PlayerControl : SuperStateMachine
     public string playerDie;
 
     [FMODUnity.EventRef]
-    public string playerStateEvent = "";
+    public string inputSound = "";
 
-    FMOD.Studio.EventInstance playerState;
 
 
     // Public Properties
@@ -141,9 +140,7 @@ public class PlayerControl : SuperStateMachine
         isAlive = true;
         */
 
-        playerState = FMODUnity.RuntimeManager.CreateInstance(playerStateEvent);
-
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(playerState, GetComponent<Transform>(), GetComponent<Rigidbody>());
+        InvokeRepeating("CallFootsteps", 0, 0.5f);
     }
 
     private void Update()
@@ -478,6 +475,14 @@ public class PlayerControl : SuperStateMachine
             playerInput.allowedInput = false;
             // Send a message to the core game manager
             CoreGameManager.Instance.LoadGameOverScreen();
+        }
+    }
+
+    public void CallFootsteps()
+    {
+        if (isMoving)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(inputSound);
         }
     }
 }
