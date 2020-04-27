@@ -1,52 +1,69 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioController : MonoBehaviour
 {
-    [FMODUnity.EventRef]
-    public string inputSound;
-    bool playerIsMoving;
-    float velX;
-    float velZ;
+    FMOD.Studio.EventInstance SFXVolumeTestEvent;
+    FMOD.Studio.EventInstance MenuMusic;
+    FMOD.Studio.EventInstance LevelMusic;
 
-    Animator anim;
-
-    private void Start()
-    {
-        anim = GetComponent<Animator>();
-        velX = anim.GetFloat("Velocity X");
-        velZ = anim.GetFloat("Velocity Z");
-
-        InvokeRepeating("CallFootsteps", 0, 0.5f);
-    }
-
-    private void Update()
-    {
-        if(velX >= 0.1f || velZ >= 0.1f || velX <= -0.1 || velZ <= -0.1)
-        {
-            playerIsMoving = true;
-        }
-
-        else if(velX == 0 || velZ == 0)
-        {
-            playerIsMoving = false;
-        }
-
-    }
-
-    void CallFootsteps()
-    {
-        if (playerIsMoving)
-        {
-            FMODUnity.RuntimeManager.PlayOneShot(inputSound);
-        }
-    }
+    FMOD.Studio.Bus Music;
+    FMOD.Studio.Bus SFX;
+    float MusicVolume = 0.5f;
+    float SFXVolume = 0.5f;
 
     
 
-    private void OnDisable()
+    private void Awake()
     {
-        playerIsMoving = false;
+        Music = FMODUnity.RuntimeManager.GetBus("bus:/Music");
+        SFX = FMODUnity.RuntimeManager.GetBus("bus:/Sfx");
+        SFXVolumeTestEvent = FMODUnity.RuntimeManager.CreateInstance("event:/Effects/SFXTest");
+        MenuMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Menu Theme");
+        LevelMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Level1 Theme");
+    }
+
+
+    private void Update()
+    {
+        Music.setVolume(MusicVolume);
+        SFX.setVolume(SFXVolume);
+    }
+
+    public void MusicVolumeLevel(float volume)
+    {
+        MusicVolume = volume;
+    }
+
+    public void SFXVolumeLevel(float volume)
+    {
+        SFXVolume = volume;
+
+        FMOD.Studio.PLAYBACK_STATE pbState;
+        SFXVolumeTestEvent.getPlaybackState(out pbState);
+        if(pbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        {
+            SFXVolumeTestEvent.start();
+        }
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        // Stop all music
+        MenuMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        LevelMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
+        // Start the next level's music
+        switch (level)
+        {
+            case 0:
+                MenuMusic.start();
+                break;
+            case 1:
+                LevelMusic.start();
+                break;
+        }
     }
 }

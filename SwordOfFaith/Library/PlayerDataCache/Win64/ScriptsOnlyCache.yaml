@@ -377,8 +377,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -422,7 +420,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12480}
     - Class: 114
+      Script: {instanceID: 12710}
+    - Class: 114
       Script: {instanceID: 12738}
+    - Class: 114
+      Script: {instanceID: 12742}
     - Class: 114
       Script: {instanceID: 12912}
     - Class: 114
@@ -455,8 +457,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14118}
     - Class: 114
       Script: {instanceID: 14166}
-    - Class: 114
-      Script: {instanceID: 236818}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1086,7 +1086,7 @@ ScriptsOnlyBuild:
     className: PostProcessResources
   - hash:
       serializedVersion: 2
-      Hash: acebb8c468774a8c2d2b885558b6f4d1
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AudioController
@@ -1665,4 +1665,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Main Menu.unity
   - Assets/Scenes/Level 1.unity
   - Assets/Scenes/GameOverScreen.unity
-  playerPath: C:/Users/alexp/OneDrive/Desktop/EnemiesBuild/SwordOfFaith.exe
+  playerPath: C:/Users/alexp/OneDrive/Desktop/NoEnemiesBuild/SwordOfFaith.exe
