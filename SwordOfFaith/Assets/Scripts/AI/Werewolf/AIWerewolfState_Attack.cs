@@ -17,6 +17,9 @@ public class AIWerewolfState_Attack : AIWerewolfState
     [FMODUnity.EventRef]
     public string enemySwing;
 
+    [FMODUnity.EventRef]
+    public string grunt;
+
     /// <summary>
     /// Returns the type of this state
     /// </summary>
@@ -74,7 +77,8 @@ public class AIWerewolfState_Attack : AIWerewolfState
                 if (_werewolfStateMachine.canDamagePlayer && _werewolfStateMachine.canDamageValue > 0.9f)
                 {
                     // Play werewolf hit sound
-                    FMODUnity.RuntimeManager.PlayOneShot(enemySwing, transform.position);
+                    FMODUnity.RuntimeManager.PlayOneShot(grunt);
+                    FMODUnity.RuntimeManager.PlayOneShot(enemySwing);
 
                     _werewolfStateMachine.targetPlayer.TakeDamage(_werewolfStateMachine.damage);
                 }

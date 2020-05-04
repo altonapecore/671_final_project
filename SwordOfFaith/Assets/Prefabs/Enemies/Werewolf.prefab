@@ -503,6 +503,7 @@ MonoBehaviour:
   _lookAtAngleThreshold: 15
   _slerpSpeed: 10
   enemySwing: event:/Enemy Sounds/Enemy Swing
+  grunt: event:/Enemy Sounds/grunt
 --- !u!54 &73483848
 Rigidbody:
   m_ObjectHideFlags: 0

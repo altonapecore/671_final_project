@@ -135,11 +135,13 @@ public class PlayerControl : SuperStateMachine
         isAlive = true;
         */
 
-        InvokeRepeating("CallFootsteps", 0, 0.4f);
+        InvokeRepeating("CallFootsteps", 0, 0.5f);
     }
 
     private void Update()
     {
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("PlayerHealth", HealthMeter.Health / 10);
+
         if (damageOverlay && isAlive)
         {
             if (damaged)
@@ -441,7 +443,7 @@ public class PlayerControl : SuperStateMachine
             HealthMeter.Health -= amount;
             damaged = true;
 
-            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("PlayerHealth", HealthMeter.Health);
+            
             //GameVars.instance.audioManager.PlaySFX(playerTakeDamage, 0.5f, gameObject.transform.position);
             // Check if we're below zero
             if (HealthMeter.Health < 0.0f)
