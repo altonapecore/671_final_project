@@ -6,25 +6,24 @@ using UnityEngine.SceneManagement;
 public class AudioController : MonoBehaviour
 {
     FMOD.Studio.EventInstance SFXVolumeTestEvent;
-    FMOD.Studio.EventInstance MenuMusic;
-    FMOD.Studio.EventInstance LevelMusic;
+    FMOD.Studio.EventInstance hover;
+    FMOD.Studio.EventInstance click;
 
     FMOD.Studio.Bus Music;
     FMOD.Studio.Bus SFX;
     float MusicVolume = 0.5f;
     float SFXVolume = 0.5f;
 
-    
+
 
     private void Awake()
     {
         Music = FMODUnity.RuntimeManager.GetBus("bus:/Music");
         SFX = FMODUnity.RuntimeManager.GetBus("bus:/Sfx");
         SFXVolumeTestEvent = FMODUnity.RuntimeManager.CreateInstance("event:/Effects/SFXTest");
-        MenuMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Menu Theme");
-        LevelMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Level1 Theme");
+        hover = FMODUnity.RuntimeManager.CreateInstance("event:/Effects/hover");
+        click = FMODUnity.RuntimeManager.CreateInstance("event:/Effects/select");
     }
-
 
     private void Update()
     {
@@ -43,27 +42,31 @@ public class AudioController : MonoBehaviour
 
         FMOD.Studio.PLAYBACK_STATE pbState;
         SFXVolumeTestEvent.getPlaybackState(out pbState);
-        if(pbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        if (pbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
         {
             SFXVolumeTestEvent.start();
         }
     }
 
-    private void OnLevelWasLoaded(int level)
-    {
-        // Stop all music
-        MenuMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        LevelMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
 
-        // Start the next level's music
-        switch (level)
+    public void Hover()
+    {
+        FMOD.Studio.PLAYBACK_STATE pbState;
+        hover.getPlaybackState(out pbState);
+        if (pbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
         {
-            case 0:
-                MenuMusic.start();
-                break;
-            case 1:
-                LevelMusic.start();
-                break;
+            hover.start();
         }
+    }
+
+    public void Click()
+    {
+        FMOD.Studio.PLAYBACK_STATE pbState;
+        click.getPlaybackState(out pbState);
+        if (pbState != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        {
+            click.start();
+        }
+
     }
 }

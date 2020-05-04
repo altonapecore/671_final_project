@@ -36,6 +36,9 @@ public class ObjectiveManager : MonoBehaviour
 
     private PlayerCamera playerOneCamera, playerTwoCamera;
 
+    [FMODUnity.EventRef]
+    public string gameWon;
+
     /// <summary>
     /// Define Singleton
     /// </summary>
@@ -230,6 +233,7 @@ public class ObjectiveManager : MonoBehaviour
         playerTwoCamera.gameObject.SetActive(false);
         CameraManager.instance.WinCamera.SetActive(true);
         CameraManager.instance.WinCamera.GetComponent<Animator>().SetBool("Move", true);
+        FMODUnity.RuntimeManager.PlayOneShot(gameWon);
         yield return new WaitForSeconds(8);
         SceneManager.LoadScene("Main Menu");
     }

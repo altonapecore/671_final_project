@@ -31,12 +31,16 @@ public class SwordSwap : MonoBehaviour
     [HideInInspector]
     Camera startCam, endCam;
 
+    [FMODUnity.EventRef]
+    public string swordSwap = "";
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && !swapping)
         {
             swapping = true;
             //GameVars.instance.audioManager.PlaySFX(swapSound, 0.5f, sword.position);
+            FMODUnity.RuntimeManager.PlayOneShot(swordSwap, transform.position);
             StartCoroutine(Swap());
         }
     }

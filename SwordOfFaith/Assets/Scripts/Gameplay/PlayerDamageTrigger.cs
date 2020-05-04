@@ -10,6 +10,9 @@ public class PlayerDamageTrigger : MonoBehaviour
     // Public Variables
     public List<AIStateMachine> currentIntersectingEnemies;
 
+    [FMODUnity.EventRef]
+    public string playerAttack = "";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +54,7 @@ public class PlayerDamageTrigger : MonoBehaviour
                 AIStateMachine _stateMachine = AIManager.Instance.GetAIStateMachine(other.GetInstanceID());
                 if (currentIntersectingEnemies.Contains(_stateMachine))
                 {
+                    FMODUnity.RuntimeManager.PlayOneShot(playerAttack);
                     // Do damage to the enemy
                     _stateMachine.TakeDamage(_playerControl.Damage);
                     // Remove it from the list

@@ -1,5 +1,107 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9165793865478045391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 0
+--- !u!114 &-8929696395774895424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator Progress/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 1
+--- !u!114 &-8867718722250192140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 0
+--- !u!114 &-8689204362498653987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &-8575718101371845505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &-8259969401648463735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
 --- !u!114 &-8257330118308513008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14,8 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Effects/SFXTest
   guid: 4f982b4fce891a418e5f2466ccab6e84
-  Banks:
-  - {fileID: 3887369442618669060}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -23,6 +124,41 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 386
+--- !u!114 &-8020930192209577890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 0
+--- !u!114 &-7882770908673299795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241379180054429
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-7492550378243725165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,6 +174,99 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637225479746116693
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-7378723807168847019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &-7276135228259411913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/Generator/QE Success
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/Generator/QE Success
+  guid: 8dcddb5d7c62df4ea648e23b799aab6c
+  Banks:
+  - {fileID: -816227195966021876}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 942
+--- !u!114 &-7114468302519935094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator Progress/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &-6515860652295210446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241502576591885
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-6505374252505790869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241488951691841
   LoadResult: 0
   FileSizes: []
   Exists: 0
@@ -59,6 +288,41 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-6306604282796770429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &-6285935968814581039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241870130422516
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-6172449326084847592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,8 +337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Enemy Sounds/Enemy Swing and Hit
   guid: 68f805277e735249a1f79b99028d3953
-  Banks:
-  - {fileID: 3887369442618669060}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -82,6 +345,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 723
+--- !u!114 &-6122188753517519431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
 --- !u!114 &-6004220729021734493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,6 +380,118 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-5939056289574541381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241858964191187
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-5917342114612851239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241486918600412
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-5907096220413662592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241364763906460
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-5902738817707775830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241510371733949
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-5661461080859898961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &-5325242937249388285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/hover
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/hover
+  guid: 6498132a5172ad45b445fe3a0a5f2394
+  Banks:
+  - {fileID: -816227195966021876}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 230
 --- !u!114 &-5165195562635200488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,16 +505,16 @@ MonoBehaviour:
   m_Name: event:/Enemy Sounds/Enemy Hit
   m_EditorClassIdentifier: 
   Path: event:/Enemy Sounds/Enemy Hit
-  guid: fecc556d5bc3894e9439933389cb018d
+  guid: 7f3cc10f2c707f44b2055eb6f2325c38
   Banks:
-  - {fileID: 3887369442618669060}
+  - {fileID: -816227195966021876}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 383
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 723
 --- !u!114 &-5015625528286131144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +533,249 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-4870216679481055171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 0
+--- !u!114 &-4776091273328070870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &-4541344637124844654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241873853555273
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-4514500263511006841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player Sounds/Switch Sword
+  m_EditorClassIdentifier: 
+  Path: event:/Player Sounds/Switch Sword
+  guid: 2a981d036d87f74aad53fde1f99eed6d
+  Banks:
+  - {fileID: -816227195966021876}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1146
+--- !u!114 &-4017337993670034165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/Game Won
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/Game Won
+  guid: 0e253234d035ee4a9e8963ac1d5fa828
+  Banks:
+  - {fileID: -816227195966021876}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5146
+--- !u!114 &-3746222750169738112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 0
+--- !u!114 &-3674003221875136147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/Generator/Generator
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/Generator/Generator
+  guid: a6f830856da88744b308ce7b5019e6e3
+  Banks:
+  - {fileID: -816227195966021876}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4819092081898212702}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-3485873211895171609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241188988299739
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-3314066416744218005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 0
+--- !u!114 &-2876078736974068554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 0
+--- !u!114 &-2550715718273759216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241357608820879
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-2480610549832875414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 0
+--- !u!114 &-2293910515628191241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 0
 --- !u!114 &-2101350812559771374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,8 +790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Effects/Generator/Skill Check Fail
   guid: 1eb1f6a46707b44e94c87e929c941d0c
-  Banks:
-  - {fileID: 3887369442618669060}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -236,8 +870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Player Sounds/Player Switch Sword
   guid: a7fefe3780ddb0418daedf7832e58889
-  Banks:
-  - {fileID: 3887369442618669060}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -245,6 +878,41 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1146
+--- !u!114 &-816227195966021876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241879119587455
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-741127056271577048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 0
 --- !u!114 &-528524046889405202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,16 +926,50 @@ MonoBehaviour:
   m_Name: event:/Enemy Sounds/Enemy Swing
   m_EditorClassIdentifier: 
   Path: event:/Enemy Sounds/Enemy Swing
-  guid: 1bc60423e488a64c8b6e83ecab1ba0ef
+  guid: a1c97795c654f04e8dd81af4c8944768
   Banks:
-  - {fileID: 3887369442618669060}
+  - {fileID: -816227195966021876}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 483
+--- !u!114 &-234163349798776450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 0
+--- !u!114 &-156258189320856978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
 --- !u!114 &-171319476984984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,33 +1002,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 2596835168603242346}
-  - {fileID: 3887369442618669060}
+  - {fileID: -816227195966021876}
   EditorEvents:
-  - {fileID: 5689699916476469161}
-  - {fileID: 4155140088461636415}
   - {fileID: -528524046889405202}
-  - {fileID: -2101350812559771374}
-  - {fileID: 3220456460900951194}
   - {fileID: 9133762124936407879}
-  - {fileID: -6172449326084847592}
-  - {fileID: 7055357919911280559}
   - {fileID: 1053732907582023235}
   - {fileID: 7702812597358157737}
   - {fileID: 7585154200451005387}
-  - {fileID: 3089606704264596477}
-  - {fileID: 167815276119276787}
   - {fileID: -5165195562635200488}
-  - {fileID: -864019027312279933}
   - {fileID: 7082879655783952041}
   - {fileID: 558238753808936801}
-  - {fileID: -8257330118308513008}
-  EditorParameters: []
+  - {fileID: -4514500263511006841}
+  - {fileID: 1324024374679039943}
+  - {fileID: 932657261508420745}
+  - {fileID: -7276135228259411913}
+  - {fileID: 1747227533256132061}
+  - {fileID: -3674003221875136147}
+  - {fileID: 2173125895150780642}
+  - {fileID: 6962266139248878784}
+  - {fileID: -5325242937249388285}
+  - {fileID: 3008572967013076227}
+  - {fileID: -4017337993670034165}
+  EditorParameters:
+  - {fileID: 7460855987137826419}
   MasterBanks:
-  - {fileID: 3887369442618669060}
+  - {fileID: -816227195966021876}
   StringsBanks:
   - {fileID: 2596835168603242346}
-  stringsBankWriteTime: 637235886110661944
+  stringsBankWriteTime: 637241879119647296
   cacheVersion: 3
+--- !u!114 &30977226812211956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241379213848841
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &167815276119276787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,8 +1063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Effects/Generator/Skill Check Success
   guid: d2bc201019e22c42aee82cab3baba264
-  Banks:
-  - {fileID: 3887369442618669060}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -350,6 +1071,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 942
+--- !u!114 &440248223470006106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 0
 --- !u!114 &558238753808936801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,7 +1103,7 @@ MonoBehaviour:
   Path: event:/Menu Theme
   guid: b0eef439b5fd74468f2ec1089f9a43fe
   Banks:
-  - {fileID: 3887369442618669060}
+  - {fileID: -816227195966021876}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -373,6 +1111,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 34868
+--- !u!114 &932657261508420745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/Generator/QE Fail
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/Generator/QE Fail
+  guid: 530986282e0154499ca580a65c9896ce
+  Banks:
+  - {fileID: -816227195966021876}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 797
 --- !u!114 &1053732907582023235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,16 +1147,208 @@ MonoBehaviour:
   m_Name: event:/Player Sounds/Player Die
   m_EditorClassIdentifier: 
   Path: event:/Player Sounds/Player Die
-  guid: a3eee90ad323104493c36f3b3a21b0de
+  guid: a099465f5471df4d8d2296a2d4bf56f2
   Banks:
-  - {fileID: 3887369442618669060}
+  - {fileID: -816227195966021876}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 830
+--- !u!114 &1215472362295366917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &1324024374679039943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player Sounds/Player Swing
+  m_EditorClassIdentifier: 
+  Path: event:/Player Sounds/Player Swing
+  guid: e1acf004522f20458b7792d2a0ac1f7b
+  Banks:
+  - {fileID: -816227195966021876}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 415
+--- !u!114 &1543453824986414165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241187572193566
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &1747227533256132061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/Generator/Gen Done
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/Generator/Gen Done
+  guid: a5665fb82df6d64f82226b85e1d2de92
+  Banks:
+  - {fileID: -816227195966021876}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2985
+--- !u!114 &1761579789935547869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &1864475114121840004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241874799099522
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &1876172532410277598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241877889810640
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &2173125895150780642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/select
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/select
+  guid: 1cfb6caee2bd544cb76c154fb8486f1b
+  Banks:
+  - {fileID: -816227195966021876}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 336
+--- !u!114 &2191893054244737298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &2289195390437181307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241853103877983
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &2320899467528557603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,6 +1385,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &2388215022669962744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator Progress/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
 --- !u!114 &2596835168603242346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,11 +1416,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637235886110661944
+  lastModified: 637241879119647296
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1744
+    Value: 1868
   Exists: 1
 --- !u!114 &2847820960627724219
 MonoBehaviour:
@@ -470,6 +1440,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &3008572967013076227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Game Over
+  m_EditorClassIdentifier: 
+  Path: event:/Game Over
+  guid: 839836e31da163458f066102536337ca
+  Banks:
+  - {fileID: -816227195966021876}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1962
 --- !u!114 &3089606704264596477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,12 +1477,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Effects/Generator/Generator Progress
   guid: c5c26158d1f2de41b7477b322bbdfe66
-  Banks:
-  - {fileID: 3887369442618669060}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: -8929696395774895424}
   MinDistance: 1
   MaxDistance: 20
   Length: 5999
@@ -507,8 +1500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Player Sounds/Player Swing and Hit
   guid: 2600fdca9bf2b14380a25a0d879c2529
-  Banks:
-  - {fileID: 3887369442618669060}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -533,7 +1525,60 @@ MonoBehaviour:
   lastModified: 637235886110592105
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
+--- !u!114 &3939703427532386411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 0
+--- !u!114 &4045380573810375786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241878352200501
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &4137444850523757471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241380002564689
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &4155140088461636415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,8 +1593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Effects/Final Doors
   guid: 0fc5ca5c853f23419488ed25bfd6bab9
-  Banks:
-  - {fileID: 3887369442618669060}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -557,6 +1601,42 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1983
+--- !u!114 &4541322519015088421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241485941180079
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &4570390357202026135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241186734813886
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &4709948460140219347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,6 +1655,62 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &4819092081898212702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 1
+--- !u!114 &5358589654927937297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 0
+--- !u!114 &5602425537958423293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemy Sounds/Enemy Hurt
+  m_EditorClassIdentifier: 
+  Path: event:/Enemy Sounds/Enemy Hurt
+  guid: 91a509834e47984e8ec50e5701f4a12f
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 383
 --- !u!114 &5604543018489121535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,8 +1743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Effects/Generator/Generator Success
   guid: 0c22940a1559bd449eaf0670d4e16c05
-  Banks:
-  - {fileID: 3887369442618669060}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -616,6 +1751,134 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2985
+--- !u!114 &5771223955047213652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &6000643755310382394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241189338125520
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &6162583474387410312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241434687673049
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &6287406085113619633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &6371205405462756700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 0
+--- !u!114 &6800550304292603996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241865960334315
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &6962266139248878784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Effects/sFXTest
+  m_EditorClassIdentifier: 
+  Path: event:/Effects/sFXTest
+  guid: 4f982b4fce891a418e5f2466ccab6e84
+  Banks:
+  - {fileID: -816227195966021876}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 386
 --- !u!114 &7055357919911280559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,8 +1893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Player Sounds/Player Swing
   guid: 77cd0b169926b64d874851c962d19dde
-  Banks:
-  - {fileID: 3887369442618669060}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -654,7 +1916,7 @@ MonoBehaviour:
   Path: event:/Level1 Theme
   guid: 9253a833eaefe74d9655d58bb7acdd1d
   Banks:
-  - {fileID: 3887369442618669060}
+  - {fileID: -816227195966021876}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -698,6 +1960,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &7460855987137826419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: PlayerHealth
+  m_EditorClassIdentifier: 
+  Name: PlayerHealth
+  Min: 0
+  Max: 100
+  Default: 100
+  Exists: 1
 --- !u!114 &7585154200451005387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -711,16 +1990,33 @@ MonoBehaviour:
   m_Name: event:/Enemy Sounds/Enemy Die
   m_EditorClassIdentifier: 
   Path: event:/Enemy Sounds/Enemy Die
-  guid: c48de21bf63a884385b0cfd29f76cf36
+  guid: 664b781dfdab364a82ca8aa14d1b8d00
   Banks:
-  - {fileID: 3887369442618669060}
+  - {fileID: -816227195966021876}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 830
+--- !u!114 &7588052027054328280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
 --- !u!114 &7702812597358157737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,7 +2032,7 @@ MonoBehaviour:
   Path: event:/Player Sounds/Player Run
   guid: 482c5be84026c442aebf6c7aa82c0e45
   Banks:
-  - {fileID: 3887369442618669060}
+  - {fileID: -816227195966021876}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -744,6 +2040,95 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 152
+--- !u!114 &7734229144170158663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241108542119015
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &8518357621981469726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241357678109678
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &8591839880601923064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Generator/GenProgress
+  m_EditorClassIdentifier: 
+  Name: GenProgress
+  Min: 0
+  Max: 3
+  Default: 0
+  Exists: 0
+--- !u!114 &8597008948859947532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241467346385710
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &8731838774524100622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241878722479693
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &8887067902546674880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,6 +2147,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &8956135005750331115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637241188354389518
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &9133762124936407879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -775,13 +2178,13 @@ MonoBehaviour:
   m_Name: event:/Player Sounds/Player Hit
   m_EditorClassIdentifier: 
   Path: event:/Player Sounds/Player Hit
-  guid: 65b6bf84d66d6d4b979f7fd3eeaf4392
+  guid: 30156a236ec668478b7fd6f6d62454eb
   Banks:
-  - {fileID: 3887369442618669060}
+  - {fileID: -816227195966021876}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 383
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1024

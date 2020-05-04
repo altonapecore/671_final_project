@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{d25f7070-f0f4-4765-bbb7-78f966ed8607}">
+		<property name="name">
+			<value>GenProgress</value>
+		</property>
+		<relationship name="folder">
+			<destination>{41d299dc-fdb9-48aa-ba4e-09b6db918455}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{49d2a269-dd6b-4c81-893b-f77e608d7934}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{49d2a269-dd6b-4c81-893b-f77e608d7934}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>3</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

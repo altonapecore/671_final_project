@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{5cca7452-d0fa-4ac9-963c-d1b320cdfe66}">
+		<property name="assetPath">
+			<value>swing.flac</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.41551020408163264</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{576bc49d-e495-49ce-a076-cbfea4ac0acb}</destination>
+		</relationship>
+	</object>
+</objects>

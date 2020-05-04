@@ -22,6 +22,7 @@ public class QTHandler : MonoBehaviour
     public string generatorStateEvent = "";
 
     FMOD.Studio.EventInstance generatorState;
+    float eventsDone = 0f;
 
     [FMODUnity.EventRef]
     public string qTSuccess = "";
@@ -63,7 +64,7 @@ public class QTHandler : MonoBehaviour
     /// </summary>
     void Start()
     {
-        generatorState.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        generatorState = FMODUnity.RuntimeManager.CreateInstance(generatorStateEvent);
 
         if(quickTimeEvents == null || quickTimeEvents.Count == 0)
         {
@@ -138,7 +139,7 @@ public class QTHandler : MonoBehaviour
     public void BeginQTEvent()
     {
         // Play generator audio
-        generatorState = FMODUnity.RuntimeManager.CreateInstance(generatorStateEvent);
+        generatorState.setParameterByName("GenProgress", eventsDone);
         generatorState.start();
 
         //GameVars.instance.audioManager.PlaySFX(ObjectiveManager.instance.generatorInteract, 0.5f, playerSide.transform.position);
@@ -176,6 +177,8 @@ public class QTHandler : MonoBehaviour
 
             FMODUnity.RuntimeManager.PlayOneShot(qTFail, transform.position);
             generatorState.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            eventsDone = 0;
+            generatorState.setParameterByName("GenProgress", eventsDone);
 
             //GameVars.instance.audioManager.PlaySFX(ObjectiveManager.instance.generatorFailed, 0.5f, playerSide.transform.position);
 
@@ -421,6 +424,9 @@ public class QTHandler : MonoBehaviour
     private IEnumerator CompleteQTEvent()
     {
         FMODUnity.RuntimeManager.PlayOneShot(qTSuccess, transform.position);
+
+        eventsDone++;
+        generatorState.setParameterByName("GenProgress", eventsDone);
 
         currentPlayerUI.ChangeInstructions("COMPLETE");
         quickTimeStatus = QTStatus.Completed;

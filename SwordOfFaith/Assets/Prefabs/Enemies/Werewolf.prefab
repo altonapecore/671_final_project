@@ -447,6 +447,7 @@ MonoBehaviour:
   _health: 10
   deathEffectPrefab: {fileID: 100004, guid: 7867af58a6ec48846ae807eb4022fbaa, type: 3}
   _stoppingDistance: 1
+  enemyDie: event:/Enemy Sounds/Enemy Die
   canDamagePlayer: 0
   inMeleeRange: 0
   aiTakeDamage: {fileID: 8300000, guid: 614bd03607f83ef4b86a9011196a191b, type: 3}

@@ -37,6 +37,9 @@ public abstract class AIStateMachine : MonoBehaviour
     protected Collider _collider = null;
     protected Transform _transform = null;
 
+    [FMODUnity.EventRef]
+    public string enemyDie = "";
+
     // Public Properties
     public bool isAlive { get; set; }
     public float Health { get { return _health; } set { _health = value; } }
@@ -292,6 +295,7 @@ public abstract class AIStateMachine : MonoBehaviour
 
     public void Kill()
     {
+        FMODUnity.RuntimeManager.PlayOneShot(enemyDie);
         // Set isAlive to false
         isAlive = false;
         if (deathEffectPrefab)

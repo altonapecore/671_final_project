@@ -75,9 +75,6 @@ public class PlayerControl : SuperStateMachine
 
     // Audio variables
     [FMODUnity.EventRef]
-    public string SwordSwitch;
-
-    [FMODUnity.EventRef]
     public string playerHurt;
 
     [FMODUnity.EventRef]
@@ -85,8 +82,6 @@ public class PlayerControl : SuperStateMachine
 
     [FMODUnity.EventRef]
     public string inputSound = "";
-
-
 
     // Public Properties
     public bool isAlive { get; set; }
@@ -140,7 +135,7 @@ public class PlayerControl : SuperStateMachine
         isAlive = true;
         */
 
-        InvokeRepeating("CallFootsteps", 0, 0.5f);
+        InvokeRepeating("CallFootsteps", 0, 0.4f);
     }
 
     private void Update()
@@ -188,8 +183,6 @@ public class PlayerControl : SuperStateMachine
     */
     public void ToggleSword(bool toggle, CharacterItem newItem = CharacterItem.None)
     {
-        // Play sword change sound
-        FMODUnity.RuntimeManager.PlayOneShot(SwordSwitch, transform.position);
         if (toggle)
         {
             // Check current item
@@ -447,6 +440,8 @@ public class PlayerControl : SuperStateMachine
             // Decrement health
             HealthMeter.Health -= amount;
             damaged = true;
+
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("PlayerHealth", HealthMeter.Health);
             //GameVars.instance.audioManager.PlaySFX(playerTakeDamage, 0.5f, gameObject.transform.position);
             // Check if we're below zero
             if (HealthMeter.Health < 0.0f)

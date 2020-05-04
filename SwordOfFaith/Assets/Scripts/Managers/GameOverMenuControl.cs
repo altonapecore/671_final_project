@@ -6,6 +6,14 @@ public class GameOverMenuControl : MonoBehaviour
 {
     private bool switchingScenes = false;
 
+    [FMODUnity.EventRef]
+    public string gameOver = "";
+
+    private void Start()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(gameOver);
+    }
+
     // Update is called once per frame
     void Update()
     {
